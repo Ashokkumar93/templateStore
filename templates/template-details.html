@@ -16,7 +16,7 @@
 		<p>Type: {{template.type}}</p>
 		<h4>{{template.price | currency}}</h4>
 		
-		<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+		<form>
 			  <input type="hidden" name="cmd" value="_xclick">
 			  <input type="hidden" name="business" value="techguyseller@sandbox.com">
 			  <input type="hidden" name="item_name" value="{{template.name}}">
@@ -27,7 +27,7 @@
 			  <input type="hidden" name="rm" value="2">
 			  <input type="hidden" name="return" value="http:localhost:8000">
 			  <input type="hidden" name="cancel_return" value="http:localhost:8000">
-			  <input type="image" name="submit"src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="PayPal - The safer, easier way to pay online">
+			  <input type="image" name="submit" alt="PayPal - The safer, easier way to pay online">
 		</form>
 
 	</div>
